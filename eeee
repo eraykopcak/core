@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Dashboard</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #1e1e2f;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #29293d;
+            padding: 1em;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2em auto;
+            padding: 1em;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .wallet {
+            background-color: #e8f0fe;
+            padding: 1em;
+            border-radius: 8px;
+            margin-bottom: 2em;
+            text-align: center;
+        }
+
+        .market {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+
+        .claim-button {
+            display: block;
+            width: 100%;
+            max-width: 200px;
+            margin: 1em auto;
+            padding: 0.5em;
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .claim-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Crypto Dashboard</h1>
+    </header>
+
+    <nav>
+        <a href="#wallet">Cüzdan</a>
+        <a href="#market">Anlık Borsa</a>
+        <a href="#claim">Claim</a>
+    </nav>
+
+    <div class="container">
+        <section id="wallet" class="wallet">
+            <h2>Cüzdan</h2>
+            <p>Bakiyeniz: 0.0000 BTC</p>
+        </section>
+
+        <section id="market" class="market">
+            <h2>Anlık Borsa</h2>
+            <p>Bitcoin Fiyatı: $43,000</p>
+            <p>Ethereum Fiyatı: $3,200</p>
+        </section>
+
+        <section id="claim">
+            <h2>Claim</h2>
+            <button class="claim-button">Hediye Al</button>
+        </section>
+    </div>
+</body>
+</html>
